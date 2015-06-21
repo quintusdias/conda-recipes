@@ -1,6 +1,6 @@
 
 Name:       hdf4
-Version:    4.2.9
+Version:    4.2.11
 Release:    1%{?dist}
 Summary:    A general purpose library and file format for storing scientific data
 

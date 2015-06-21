@@ -1,19 +1,26 @@
 package:
     name: hdf4
-    version: 4.2.9
+    version: 4.2.11
 
 source:
-    fn: hdf-4.2.9.tar.bz2
-    url: http://www.hdfgroup.org/ftp/HDF/releases/HDF4.2.9/src/hdf-4.2.9.tar.bz2
-    md5: c268a703f334ee4987fa710a0de9b9fc
+    fn: hdf-4.2.11.tar.bz2
+    url: http://www.hdfgroup.org/ftp/HDF/releases/HDF4.2.11/src/hdf-4.2.11.tar.bz2
+    md5: 192a0320ef06f657523c2efaee0ccdcf
+
+    patches:
+      - patch_am
+      - patch_in
 
 build:
     number: 0
 
 requirements:
     build:
-
+      - jpeg
+      - zlib
     run:
+      - jpeg
+      - zlib
 
 test:
     imports:
