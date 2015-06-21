@@ -1,0 +1,14 @@
+--- mfhdf/Makefile.am	2015-06-20 19:36:10.000000000 -0400
++++ mfhdf/Makefile.am.new	2015-06-20 19:39:56.000000000 -0400
+@@ -13,9 +13,9 @@
+ endif
+ 
+ # src folder in root Makefile, build other folders now
+-SUBDIRS = $(XDR_DIR) libsrc $(FORTRAN_DIR) test ncdump ncgen dumper hdfimport hdiff hrepack nctest
++SUBDIRS = $(XDR_DIR) libsrc $(FORTRAN_DIR) test dumper hdfimport hdiff hrepack 
+ 
+-DIST_SUBDIRS = xdr libsrc fortran test ncdump ncgen dumper hdfimport hdiff hrepack nctest examples
++DIST_SUBDIRS = xdr libsrc fortran test dumper hdfimport hdiff hrepack examples
+ 
+ installcheck-local:
+ 	@(cd examples && $(MAKE) $(AM_MAKEFLAGS) $@) || exit 1;
