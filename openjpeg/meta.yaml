@@ -1,0 +1,19 @@
+package:
+  name: openjpeg
+  version: 2.1.0
+
+source:
+    url: https://github.com/uclouvain/openjpeg/archive/version.2.1.tar.gz
+    fn: openjpeg-2.1.tar.gz
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - cmake
+    - python
+    - libpng
+    - libtiff
+  run:
+    - python
