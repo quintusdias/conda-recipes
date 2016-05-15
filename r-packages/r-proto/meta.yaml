@@ -19,7 +19,8 @@ source:
 build:
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1 # [osx]
+  number: 2 # [osx]
+  number: 1 # [not osx]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -51,7 +52,7 @@ about:
   license: GPL-2
   summary: An object oriented system using object-based, also called prototype-based, rather
     than class-based object oriented ideas.
-
+  license_family: GPL2
 # The original CRAN metadata for this package was:
 
 # Package: proto

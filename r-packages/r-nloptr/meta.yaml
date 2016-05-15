@@ -19,7 +19,8 @@ source:
 build:
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1 # [osx]
+  number: 2 # [osx]
+  number: 1 # [not osx]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -31,10 +32,12 @@ requirements:
   build:
     - r
     - nlopt # [not win]
+    - gcc # [not win]
 
   run:
     - r
     - nlopt # [not win]
+    - libgcc # [not win]
 
 test:
   commands:
@@ -57,7 +60,7 @@ about:
     See http://ab-initio.mit.edu/wiki/index.php/NLopt_Introduction for more information
     on the available algorithms. During installation on Unix the NLopt code is downloaded
     and compiled from the NLopt website.'
-
+  license_family: LGPL
 
 # The original CRAN metadata for this package was:
 

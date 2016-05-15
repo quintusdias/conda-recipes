@@ -19,7 +19,8 @@ source:
 build:
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1 # [osx]
+  number: 2 # [osx]
+  number: 1 # [not osx]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -52,7 +53,7 @@ about:
   summary: brew implements a templating framework for mixing text and R code for report generation.
     brew template syntax is similar to PHP, Ruby's erb module, Java Server Pages, and
     Python's psp module.
-
+  license_family: GPL2
 # The original CRAN metadata for this package was:
 
 # Package: brew

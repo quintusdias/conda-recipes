@@ -19,7 +19,8 @@ source:
 build:
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1 # [osx]
+  number: 2 # [osx]
+  number: 1 # [not osx]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -50,13 +51,13 @@ about:
   home: http://github.com/edwindj/whisker
   license: GPL-3
   summary: logicless templating, reuse templates in many programming languages including R
-
+  license_family: GPL3
 # The original CRAN metadata for this package was:
 
 # Package: whisker
 # Maintainer: Edwin de Jonge <edwindjonge@gmail.com>
 # License: GPL-3
-# Title: {{mustache}} for R, logicless templating
+# Title: mustache for R, logicless templating
 # Type: Package
 # LazyLoad: yes
 # Author: Edwin de Jonge

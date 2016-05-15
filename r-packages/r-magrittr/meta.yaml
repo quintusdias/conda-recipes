@@ -19,7 +19,8 @@ source:
 build:
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1 # [osx]
+  number: 2 # [osx]
+  number: 1 # [not osx]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -54,7 +55,7 @@ about:
     function call/expression. There is flexible support for the type of right-hand side
     expressions. For more information, see package vignette. To quote Rene Magritte,
     "Ceci n'est pas un pipe."
-
+  license_family: MIT
 # The original CRAN metadata for this package was:
 
 # Package: magrittr

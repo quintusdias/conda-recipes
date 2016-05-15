@@ -24,7 +24,8 @@ source:
 build:
   # If this is a new build for the same version, increment the build
   # number. If you do not include this key, it defaults to 0.
-  number: 1 # [win32 or linux]
+  number: 2 # [win32 or linux]
+  number: 1 # [not (win32 or linux)]
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -34,10 +35,12 @@ build:
 requirements:
   build:
     - r
+    - gcc    # [not win]
     - zeromq # [not win]
 
   run:
     - r
+    - libgcc # [not win]
     - zeromq # [not win]
 
 test:
@@ -57,7 +60,7 @@ about:
   license: GPL-3
   summary: Interface to the ZeroMQ lightweight messaging kernel (see <http://www.zeromq.org/>
     for more information).
-
+  license_family: GPL3
 # The original CRAN metadata for this package was:
 
 # Package: rzmq
